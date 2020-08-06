@@ -7,7 +7,11 @@ int main(){
     char name[20]
     int i,heads=0,tails=0;
 
-    srand((unsigned int)time(NULL))
+    srand((unsigned int)time(NULL));
+    
+    printf("Who are you?\n> ");
+    scanf("%s", name);
+    printf("Hello, %s\n", name);
 
     printf("Tossing a coin...\n");
 
@@ -21,7 +25,14 @@ int main(){
             printf("Round %d:Tails\n",i+1);
         }
     }
-    printf(Heads: %d,Tails: %d\n", heads, tails);
+    printf("Heads: %d,Tails: %d\n", heads, tails);
+    
+    if(heads>tails){
+        printf("%s won!\n",name);
+    }
+    else{
+        printf("%s lost!\n",name);
+    }
 
     return 0;
 }
