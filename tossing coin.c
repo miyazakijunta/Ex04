@@ -3,6 +3,7 @@
 #include <time.h>
 #include <unistd.h>
 
+
 int main(){
     char name[20]
     int i,heads=0,tails=0;
